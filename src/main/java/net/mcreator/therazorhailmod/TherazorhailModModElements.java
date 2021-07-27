@@ -54,6 +54,8 @@ public class TherazorhailModModElements {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("therazorhail_mod", "heavyhurt")));
 		sounds.put(new ResourceLocation("therazorhail_mod", "theheavyisded"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("therazorhail_mod", "theheavyisded")));
+		sounds.put(new ResourceLocation("therazorhail_mod", "chicken_invaders_theme"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("therazorhail_mod", "chicken_invaders_theme")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("therazorhail_mod").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

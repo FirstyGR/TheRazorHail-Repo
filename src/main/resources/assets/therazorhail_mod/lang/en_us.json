@@ -1,11 +1,14 @@
 {
+  "item.therazorhail_mod.chicken_invaders_theme.desc": "While listening to this, you see Heavies Circle.",
+  "block.therazorhail_mod.beer_brewer": "Beer Brewer",
   "item.therazorhail_mod.beer": "Beer",
   "subtitles.heavychilling": "Heavy Be Chilling",
   "item.therazorhail_mod.heavy_tf_2_spawn_egg": "Heavy TF2 Spawn Egg",
   "subtitles.heavyhurt": "Some Moron Hit Heavy(why tf would you do that)",
-  "block.therazorhail_mod.beer_brewer": "Beer Brewer",
   "subtitles.heeavypissed": "Heavy Is Fucking Pissed",
   "subtitles.theheavyisded": "HEAVY IS DEAD",
   "entity.therazorhail_mod.heavy_tf_2": "Heavy TF2",
-  "item.therazorhail_mod.time_to_throw": "Time To Throw Pogchamp"
+  "item.therazorhail_mod.chicken_invaders_theme": "Chicken Invaders Theme",
+  "item.therazorhail_mod.time_to_throw": "Time To Throw Pogchamp",
+  "subtitles.chicken_invaders_theme": "A Song Of Dominance Plays, Pray."
 }

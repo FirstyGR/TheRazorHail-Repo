@@ -50,5 +50,15 @@
         "stream": false
       }
     ]
+  },
+  "chicken_invaders_theme": {
+    "category": "record",
+    "subtitle": "subtitles.chicken_invaders_theme",
+    "sounds": [
+      {
+        "name": "therazorhail_mod:chicken_invaders_theme_but_its_low_quality_and_compressed",
+        "stream": true
+      }
+    ]
   }
 }
