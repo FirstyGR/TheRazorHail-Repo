@@ -35,16 +35,11 @@ import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.material.Material;
 
-import net.mcreator.therazorhailmod.procedures.HeavyTF2EntityDiesProcedure;
 import net.mcreator.therazorhailmod.entity.renderer.HeavyTF2Renderer;
 import net.mcreator.therazorhailmod.TherazorhailModModElements;
-
-import java.util.Map;
-import java.util.HashMap;
 
 @TherazorhailModModElements.ModElement.Tag
 public class HeavyTF2Entity extends TherazorhailModModElements.ModElement {
@@ -145,20 +140,6 @@ public class HeavyTF2Entity extends TherazorhailModModElements.ModElement {
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("therazorhail_mod:theheavyisded"));
-		}
-
-		@Override
-		public void onDeath(DamageSource source) {
-			super.onDeath(source);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity sourceentity = source.getTrueSource();
-			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				HeavyTF2EntityDiesProcedure.executeProcedure($_dependencies);
-			}
 		}
 	}
 }

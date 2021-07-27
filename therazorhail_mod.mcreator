@@ -106,18 +106,6 @@
       "registry_name": "wheat_tag"
     },
     {
-      "name": "HeavyTF2EntityDies",
-      "type": "procedure",
-      "sortid": 7,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "heavy_tf_2_entity_dies",
-      "metadata": {
-        "dependencies": []
-      }
-    },
-    {
       "name": "HeavyTF2",
       "type": "mob",
       "sortid": 7,
