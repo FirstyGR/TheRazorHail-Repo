@@ -1,0 +1,244 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "BeerBrewer",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beer_brewer"
+    },
+    {
+      "name": "BeerBrewerMenu",
+      "type": "gui",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beer_brewer_menu"
+    },
+    {
+      "name": "OnBrewButtonClick",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "on_brew_button_click",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BeerFoodEaten",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beer_food_eaten",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Beer",
+      "type": "food",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beer"
+    },
+    {
+      "name": "BrewerRecipe",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "brewer_recipe"
+    },
+    {
+      "name": "TamperCheck",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tamper_check",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WheatTag",
+      "type": "tag",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wheat_tag"
+    },
+    {
+      "name": "HeavyTF2EntityDies",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heavy_tf_2_entity_dies",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "HeavyTF2",
+      "type": "mob",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heavy_tf_2"
+    },
+    {
+      "name": "TimeToThrow",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "time_to_throw"
+    },
+    {
+      "name": "HowToCraftRazor",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "how_to_craft_razor"
+    },
+    {
+      "name": "SandvichV2",
+      "type": "food",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sandvich_v_2"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "tickLoop",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "craftCheck",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "heeavypissed",
+      "files": [
+        "throw"
+      ],
+      "category": "hostile",
+      "subtitle": "Heavy Is Fucking Pissed"
+    },
+    {
+      "name": "heavychilling",
+      "files": [
+        "no3"
+      ],
+      "category": "neutral",
+      "subtitle": "Heavy Be Chilling"
+    },
+    {
+      "name": "heavyhurt",
+      "files": [
+        "hit1",
+        "hit2",
+        "hit3",
+        "hit4"
+      ],
+      "category": "master",
+      "subtitle": "Some Moron Hit Heavy(why tf would you do that)"
+    },
+    {
+      "name": "theheavyisded",
+      "files": [
+        "death"
+      ],
+      "category": "master",
+      "subtitle": "HEAVY IS DEAD"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "item.therazorhail_mod.beer": "Beer",
+      "subtitles.heavychilling": "Heavy Be Chilling",
+      "item.therazorhail_mod.heavy_tf_2_spawn_egg": "Heavy TF2 Spawn Egg",
+      "item.therazorhail_mod.sandvich_v_2": "Sandvich V 2",
+      "subtitles.heavyhurt": "Some Moron Hit Heavy(why tf would you do that)",
+      "block.therazorhail_mod.beer_brewer": "Beer Brewer",
+      "subtitles.heeavypissed": "Heavy Is Fucking Pissed",
+      "subtitles.theheavyisded": "HEAVY IS DEAD",
+      "entity.therazorhail_mod.heavy_tf_2": "Heavy TF2",
+      "item.therazorhail_mod.time_to_throw": "Time To Throw Pogchamp"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "therazorhail_mod",
+    "modName": "TheRazorHail Mod",
+    "version": "1.0.0",
+    "author": "redst, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "net.mcreator.therazorhailmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}

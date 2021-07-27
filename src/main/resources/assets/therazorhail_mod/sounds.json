@@ -1,0 +1,54 @@
+{
+  "heeavypissed": {
+    "category": "hostile",
+    "subtitle": "subtitles.heeavypissed",
+    "sounds": [
+      {
+        "name": "therazorhail_mod:throw",
+        "stream": false
+      }
+    ]
+  },
+  "heavychilling": {
+    "category": "neutral",
+    "subtitle": "subtitles.heavychilling",
+    "sounds": [
+      {
+        "name": "therazorhail_mod:no3",
+        "stream": false
+      }
+    ]
+  },
+  "heavyhurt": {
+    "category": "master",
+    "subtitle": "subtitles.heavyhurt",
+    "sounds": [
+      {
+        "name": "therazorhail_mod:hit1",
+        "stream": false
+      },
+      {
+        "name": "therazorhail_mod:hit2",
+        "stream": false
+      },
+      {
+        "name": "therazorhail_mod:hit3",
+        "stream": false
+      },
+      {
+        "name": "therazorhail_mod:hit4",
+        "stream": false
+      }
+    ]
+  },
+  "theheavyisded": {
+    "category": "master",
+    "subtitle": "subtitles.theheavyisded",
+    "sounds": [
+      {
+        "name": "therazorhail_mod:death",
+        "stream": false
+      }
+    ]
+  }
+}
