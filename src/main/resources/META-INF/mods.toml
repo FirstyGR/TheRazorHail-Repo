@@ -7,8 +7,12 @@ modId="therazorhail_mod"
 version="1.0.0"
 displayName="TheRazorHail Mod"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
-displayURL="https://mcreator.net"
-authors="redst, MCreator"
+displayURL="https://bit.ly/3x8X4oc"
+logoFile="logo.png"
+authors="tom the bartender"
+description='''
+A mod made for Butter Boy Razor's server. This version of the mod is  called TheHeavyUpdate.
+'''
 
 [[dependencies.therazorhail_mod]]
     modId="minecraft"

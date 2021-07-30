@@ -2,9 +2,9 @@
   "_fv": 18,
   "_type": "food",
   "definition": {
-    "renderType": 0,
+    "renderType": 2,
     "texture": "download",
-    "customModelName": "Normal",
+    "customModelName": "beercup",
     "name": "Beer",
     "rarity": "COMMON",
     "specialInfo": [],

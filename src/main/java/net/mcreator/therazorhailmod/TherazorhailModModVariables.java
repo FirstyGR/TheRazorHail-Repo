@@ -84,6 +84,7 @@ public class TherazorhailModModVariables {
 		public static final String DATA_NAME = "therazorhail_mod_mapvars";
 		public double tickLoop = 0;
 		public boolean craftCheck = false;
+		public boolean HeadGotRightClicked = false;
 		public MapVariables() {
 			super(DATA_NAME);
 		}
@@ -96,12 +97,14 @@ public class TherazorhailModModVariables {
 		public void read(CompoundNBT nbt) {
 			tickLoop = nbt.getDouble("tickLoop");
 			craftCheck = nbt.getBoolean("craftCheck");
+			HeadGotRightClicked = nbt.getBoolean("HeadGotRightClicked");
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
 			nbt.putDouble("tickLoop", tickLoop);
 			nbt.putBoolean("craftCheck", craftCheck);
+			nbt.putBoolean("HeadGotRightClicked", HeadGotRightClicked);
 			return nbt;
 		}
 

@@ -36,14 +36,13 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.CreatureAttribute;
-import net.minecraft.block.material.Material;
 
 import net.mcreator.therazorhailmod.entity.renderer.HeavyTF2Renderer;
 import net.mcreator.therazorhailmod.TherazorhailModModElements;
 
 @TherazorhailModModElements.ModElement.Tag
 public class HeavyTF2Entity extends TherazorhailModModElements.ModElement {
-	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE)
+	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.AMBIENT)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(1.8f, 2.8f)).build("heavy_tf_2").setRegistryName("heavy_tf_2");
 	public HeavyTF2Entity(TherazorhailModModElements instance) {
@@ -63,25 +62,24 @@ public class HeavyTF2Entity extends TherazorhailModModElements.ModElement {
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
 		boolean biomeCriteria = false;
-		if (new ResourceLocation("plains").equals(event.getName()))
+		if (new ResourceLocation("badlands").equals(event.getName()))
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
-		event.getSpawns().getSpawner(EntityClassification.CREATURE).add(new MobSpawnInfo.Spawners(entity, 20, 6, 12));
+		event.getSpawns().getSpawner(EntityClassification.AMBIENT).add(new MobSpawnInfo.Spawners(entity, 10, 3, 6));
 	}
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
-				(entityType, world, reason, pos,
-						random) -> (world.getBlockState(pos.down()).getMaterial() == Material.ORGANIC && world.getLightSubtracted(pos, 0) > 8));
+		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.NO_RESTRICTIONS,
+				Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, MobEntity::canSpawnOn);
 	}
 	private static class EntityAttributesRegisterHandler {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
 			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.3);
-			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 10);
+			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 20);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 5);
 			ammma = ammma.createMutableAttribute(Attributes.KNOCKBACK_RESISTANCE, 3);
@@ -108,8 +106,8 @@ public class HeavyTF2Entity extends TherazorhailModModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
-			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 1));
+			this.goalSelector.addGoal(1, new RandomWalkingGoal(this, 1));
+			this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, false));
 			this.goalSelector.addGoal(3, new FollowMobGoal(this, (float) 1, 10, 5));
 			this.targetSelector.addGoal(4, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
 			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, ZombieEntity.class, true, false));

@@ -54,8 +54,28 @@ public class TherazorhailModModElements {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("therazorhail_mod", "heavyhurt")));
 		sounds.put(new ResourceLocation("therazorhail_mod", "theheavyisded"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("therazorhail_mod", "theheavyisded")));
+		sounds.put(new ResourceLocation("therazorhail_mod", "razorscreams"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("therazorhail_mod", "razorscreams")));
+		sounds.put(new ResourceLocation("therazorhail_mod", "razordiedkekw"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("therazorhail_mod", "razordiedkekw")));
+		sounds.put(new ResourceLocation("therazorhail_mod", "yoshicooms"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("therazorhail_mod", "yoshicooms")));
+		sounds.put(new ResourceLocation("therazorhail_mod", "qustionaboutviolence"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("therazorhail_mod", "qustionaboutviolence")));
+		sounds.put(new ResourceLocation("therazorhail_mod", "papimeowpapilove"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("therazorhail_mod", "papimeowpapilove")));
+		sounds.put(new ResourceLocation("therazorhail_mod", "razjibated"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("therazorhail_mod", "razjibated")));
+		sounds.put(new ResourceLocation("therazorhail_mod", "cofeeass"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("therazorhail_mod", "cofeeass")));
+		sounds.put(new ResourceLocation("therazorhail_mod", "cbtsessionlesco"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("therazorhail_mod", "cbtsessionlesco")));
+		sounds.put(new ResourceLocation("therazorhail_mod", "amogussussy"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("therazorhail_mod", "amogussussy")));
 		sounds.put(new ResourceLocation("therazorhail_mod", "chicken_invaders_theme"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("therazorhail_mod", "chicken_invaders_theme")));
+		sounds.put(new ResourceLocation("therazorhail_mod", "dickedlol"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("therazorhail_mod", "dickedlol")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("therazorhail_mod").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

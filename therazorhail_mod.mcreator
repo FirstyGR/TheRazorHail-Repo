@@ -97,15 +97,6 @@
       }
     },
     {
-      "name": "WheatTag",
-      "type": "tag",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "wheat_tag"
-    },
-    {
       "name": "HeavyTF2",
       "type": "mob",
       "sortid": 7,
@@ -149,6 +140,62 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "chicken_invaders_disk_recipe"
+    },
+    {
+      "name": "RazorBoss",
+      "type": "mob",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "razor_boss"
+    },
+    {
+      "name": "RazorHeadOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "razor_head_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RazorHead",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "razor_head"
+    },
+    {
+      "name": "RazHeadRecipe",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raz_head_recipe"
     }
   ],
   "variable_elements": [
@@ -160,6 +207,12 @@
     },
     {
       "name": "craftCheck",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "HeadGotRightClicked",
       "type": "logic",
       "scope": "map",
       "value": "false"
@@ -202,28 +255,122 @@
       "subtitle": "HEAVY IS DEAD"
     },
     {
+      "name": "razorscreams",
+      "files": [
+        "razor_screams"
+      ],
+      "category": "neutral",
+      "subtitle": "The Razzy got scared,"
+    },
+    {
+      "name": "razordiedkekw",
+      "files": [
+        "fart-with-extra-reverb"
+      ],
+      "category": "hostile",
+      "subtitle": "RAZOR DIED OMEGALUL"
+    },
+    {
+      "name": "yoshicooms",
+      "files": [
+        "razor_yoshiscoming"
+      ],
+      "category": "master",
+      "subtitle": "Yoshi is coming.:RazHead:"
+    },
+    {
+      "name": "qustionaboutviolence",
+      "files": [
+        "violence"
+      ],
+      "category": "hostile",
+      "subtitle": "Violence? Yes!"
+    },
+    {
+      "name": "papimeowpapilove",
+      "files": [
+        "meowraz"
+      ],
+      "category": "neutral",
+      "subtitle": "He said meow. What else do you want?"
+    },
+    {
+      "name": "razjibated",
+      "files": [
+        "jibated"
+      ],
+      "category": "neutral",
+      "subtitle": "He got jibated :KEKW:"
+    },
+    {
+      "name": "cofeeass",
+      "files": [
+        "cofeeassraz_tf"
+      ],
+      "category": "neutral",
+      "subtitle": "Bruh who the fuck shoves cofee up their ass. razBruh"
+    },
+    {
+      "name": "cbtsessionlesco",
+      "files": [
+        "cbt"
+      ],
+      "category": "neutral",
+      "subtitle": "CBT TIME WOOOOOOOOOOOO!"
+    },
+    {
+      "name": "amogussussy",
+      "files": [
+        "23878-among-us-trap-remix-bass-boosted-leonz"
+      ],
+      "category": "music",
+      "subtitle": "JKL I hate you sometimes. (joking lol)"
+    },
+    {
       "name": "chicken_invaders_theme",
       "files": [
         "chicken_invaders_theme_but_its_low_quality_and_compressed"
       ],
-      "category": "record",
+      "category": "music",
       "subtitle": "A Song Of Dominance Plays, Pray."
+    },
+    {
+      "name": "dickedlol",
+      "files": [
+        "diqued"
+      ],
+      "category": "hostile",
+      "subtitle": "He got diqued. :KEKW:"
     }
   ],
   "language_map": {
     "en_us": {
-      "item.therazorhail_mod.chicken_invaders_theme.desc": "While listening to this, you see Heavies Circle.",
+      "subtitles.hegotdiqued": "He got dicked. :KEKW:",
+      "item.therazorhail_mod.chicken_invaders_theme.desc": "While listening to this, you see Heavies Circle You.",
+      "subtitles.qustionaboutviolence": "Violence? Yes!",
+      "subtitles.razorscreams": "The Razzy got scared,",
+      "item.therazorhail_mod.razor_boss_spawn_egg": "Razor Boss Spawn Egg",
+      "subtitles.yoshicooms": "Yoshi is coming.:RazHead:",
+      "subtitles.amogussussy": "JKL I hate you sometimes. (joking lol)",
+      "item.therazorhail_mod.heavy_tf_2_spawn_egg": "Heavy TF2 Spawn Egg",
+      "subtitles.chicken_invaders_theme": "A Song Of Dominance Plays, Pray.",
+      "entity.therazorhail_mod.razor_boss": "Razor Boss",
       "block.therazorhail_mod.beer_brewer": "Beer Brewer",
+      "subtitles.razordiedkekw": "RAZOR DIED OMEGALUL",
+      "subtitles.razjibated": "He got jibated :KEKW:",
+      "subtitles.papimeowpapilove": "He said meow. What else do you want?",
       "item.therazorhail_mod.beer": "Beer",
       "subtitles.heavychilling": "Heavy Be Chilling",
-      "item.therazorhail_mod.heavy_tf_2_spawn_egg": "Heavy TF2 Spawn Egg",
+      "subtitles.cofeeass": "Bruh who the fuck shoves cofee up their ass. razBruh",
       "subtitles.heavyhurt": "Some Moron Hit Heavy(why tf would you do that)",
       "subtitles.heeavypissed": "Heavy Is Fucking Pissed",
+      "subtitles.dickedlol": "He got diqued. :KEKW:",
       "subtitles.theheavyisded": "HEAVY IS DEAD",
       "entity.therazorhail_mod.heavy_tf_2": "Heavy TF2",
       "item.therazorhail_mod.chicken_invaders_theme": "Chicken Invaders Theme",
+      "block.therazorhail_mod.razor_head": "Razor Head",
       "item.therazorhail_mod.time_to_throw": "Time To Throw Pogchamp",
-      "subtitles.chicken_invaders_theme": "A Song Of Dominance Plays, Pray."
+      "subtitles.cbtsessionlesco": "CBT TIME WOOOOOOOOOOOO!"
     }
   },
   "foldersRoot": {
@@ -234,16 +381,19 @@
     "modid": "therazorhail_mod",
     "modName": "TheRazorHail Mod",
     "version": "1.0.0",
-    "author": "redst, MCreator",
-    "websiteURL": "https://mcreator.net",
+    "description": "A mod made for Butter Boy Razor\u0027s server. This version of the mod is  called TheHeavyUpdate.",
+    "author": "tom the bartender",
+    "websiteURL": "https://bit.ly/3x8X4oc",
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "860268152344936448",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.therazorhailmod",
     "lockBaseModFiles": false
   },

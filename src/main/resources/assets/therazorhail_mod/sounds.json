@@ -51,13 +51,113 @@
       }
     ]
   },
+  "razorscreams": {
+    "category": "neutral",
+    "subtitle": "subtitles.razorscreams",
+    "sounds": [
+      {
+        "name": "therazorhail_mod:razor_screams",
+        "stream": false
+      }
+    ]
+  },
+  "razordiedkekw": {
+    "category": "hostile",
+    "subtitle": "subtitles.razordiedkekw",
+    "sounds": [
+      {
+        "name": "therazorhail_mod:fart-with-extra-reverb",
+        "stream": false
+      }
+    ]
+  },
+  "yoshicooms": {
+    "category": "master",
+    "subtitle": "subtitles.yoshicooms",
+    "sounds": [
+      {
+        "name": "therazorhail_mod:razor_yoshiscoming",
+        "stream": false
+      }
+    ]
+  },
+  "qustionaboutviolence": {
+    "category": "hostile",
+    "subtitle": "subtitles.qustionaboutviolence",
+    "sounds": [
+      {
+        "name": "therazorhail_mod:violence",
+        "stream": false
+      }
+    ]
+  },
+  "papimeowpapilove": {
+    "category": "neutral",
+    "subtitle": "subtitles.papimeowpapilove",
+    "sounds": [
+      {
+        "name": "therazorhail_mod:meowraz",
+        "stream": false
+      }
+    ]
+  },
+  "razjibated": {
+    "category": "neutral",
+    "subtitle": "subtitles.razjibated",
+    "sounds": [
+      {
+        "name": "therazorhail_mod:jibated",
+        "stream": false
+      }
+    ]
+  },
+  "cofeeass": {
+    "category": "neutral",
+    "subtitle": "subtitles.cofeeass",
+    "sounds": [
+      {
+        "name": "therazorhail_mod:cofeeassraz_tf",
+        "stream": false
+      }
+    ]
+  },
+  "cbtsessionlesco": {
+    "category": "neutral",
+    "subtitle": "subtitles.cbtsessionlesco",
+    "sounds": [
+      {
+        "name": "therazorhail_mod:cbt",
+        "stream": false
+      }
+    ]
+  },
+  "amogussussy": {
+    "category": "music",
+    "subtitle": "subtitles.amogussussy",
+    "sounds": [
+      {
+        "name": "therazorhail_mod:23878-among-us-trap-remix-bass-boosted-leonz",
+        "stream": true
+      }
+    ]
+  },
   "chicken_invaders_theme": {
-    "category": "record",
+    "category": "music",
     "subtitle": "subtitles.chicken_invaders_theme",
     "sounds": [
       {
         "name": "therazorhail_mod:chicken_invaders_theme_but_its_low_quality_and_compressed",
         "stream": true
+      }
+    ]
+  },
+  "dickedlol": {
+    "category": "hostile",
+    "subtitle": "subtitles.dickedlol",
+    "sounds": [
+      {
+        "name": "therazorhail_mod:diqued",
+        "stream": false
       }
     ]
   }
