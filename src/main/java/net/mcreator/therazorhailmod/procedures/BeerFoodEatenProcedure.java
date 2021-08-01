@@ -5,6 +5,7 @@ import net.minecraft.potion.EffectInstance;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.therazorhailmod.TherazorhailModModVariables;
 import net.mcreator.therazorhailmod.TherazorhailModModElements;
 import net.mcreator.therazorhailmod.TherazorhailModMod;
 
@@ -23,7 +24,26 @@ public class BeerFoodEatenProcedure extends TherazorhailModModElements.ModElemen
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if (entity instanceof LivingEntity)
-			((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.NAUSEA, (int) 1200, (int) 1, (false), (false)));
+		if ((((entity.getCapability(TherazorhailModModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new TherazorhailModModVariables.PlayerVariables())).HowDruckIsThePlayer) >= 4)) {
+			{
+				double _setval = (double) 0;
+				entity.getCapability(TherazorhailModModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.HowDruckIsThePlayer = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			if (entity instanceof LivingEntity)
+				((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.NAUSEA, (int) 1300, (int) 1, (false), (true)));
+		} else {
+			{
+				double _setval = (double) (((entity.getCapability(TherazorhailModModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new TherazorhailModModVariables.PlayerVariables())).HowDruckIsThePlayer) + 1);
+				entity.getCapability(TherazorhailModModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.HowDruckIsThePlayer = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		}
 	}
 }

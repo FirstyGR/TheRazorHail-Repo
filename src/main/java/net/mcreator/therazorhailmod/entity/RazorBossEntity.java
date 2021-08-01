@@ -120,7 +120,7 @@ public class RazorBossEntity extends TherazorhailModModElements.ModElement {
 
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("therazorhail_mod:razorscreams"));
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("therazorhail_mod:razordiedkekw"));
 		}
 
 		@Override
