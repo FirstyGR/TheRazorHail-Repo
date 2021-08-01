@@ -71,7 +71,7 @@ public class BeerBrewerMenuGuiWindow extends ContainerScreen<BeerBrewerMenuGui.G
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
 		this.font.drawString(ms, "Beer Brewer", 58, 3, -12829636);
-		this.font.drawString(ms, "You need to add EXACTLY 4 wheat", 6, 19, -16764109);
+		this.font.drawString(ms, "You need to add 3 to 4 wheat.", 14, 18, -16764109);
 		this.font.drawString(ms, "to the left slot", 44, 34, -12829636);
 	}
 

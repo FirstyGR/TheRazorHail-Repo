@@ -79,14 +79,14 @@
       {
         "type": "label",
         "data": {
-          "text": "You need to add EXACTLY 4 wheat",
+          "text": "You need to add 3 to 4 wheat.",
           "color": {
             "value": -16764109,
             "falpha": 0.0
           },
-          "name": "You need to add EXACTLY 4 wheat",
-          "x": 132,
-          "y": 56
+          "name": "You need to add 3 to 4 wheat.",
+          "x": 140,
+          "y": 55
         }
       },
       {

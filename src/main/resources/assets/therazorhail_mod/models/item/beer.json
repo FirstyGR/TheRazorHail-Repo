@@ -1,9 +1,6 @@
 {
-  "forge_marker": 1,
-  "parent": "forge:item/default",
-  "loader": "forge:obj",
-  "model": "therazorhail_mod:models/item/beercup.obj",
+  "parent": "item/generated",
   "textures": {
-    "particle": "therazorhail_mod:items/download"
+    "layer0": "therazorhail_mod:items/download"
   }
 }

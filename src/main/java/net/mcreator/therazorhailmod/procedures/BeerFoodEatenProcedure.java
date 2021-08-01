@@ -25,7 +25,7 @@ public class BeerFoodEatenProcedure extends TherazorhailModModElements.ModElemen
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if ((((entity.getCapability(TherazorhailModModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new TherazorhailModModVariables.PlayerVariables())).HowDruckIsThePlayer) >= 4)) {
+				.orElse(new TherazorhailModModVariables.PlayerVariables())).HowDruckIsThePlayer) >= 3)) {
 			{
 				double _setval = (double) 0;
 				entity.getCapability(TherazorhailModModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
