@@ -29,8 +29,7 @@ public class HeavyTF2EntityDiesProcedure extends TherazorhailModModElements.ModE
 		if (!world.isRemote()) {
 			MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
 			if (mcserv != null)
-				mcserv.getPlayerList().func_232641_a_(new StringTextComponent("https://www.youtube.com/watch?v=XOJKQQ4QzOI"), ChatType.SYSTEM,
-						Util.DUMMY_UUID);
+				mcserv.getPlayerList().func_232641_a_(new StringTextComponent("The Heavy Is Dead. -Antoine Delak"), ChatType.SYSTEM, Util.DUMMY_UUID);
 		}
 	}
 }

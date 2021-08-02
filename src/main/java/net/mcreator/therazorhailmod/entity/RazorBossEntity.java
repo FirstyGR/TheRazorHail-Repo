@@ -37,8 +37,8 @@ import net.mcreator.therazorhailmod.TherazorhailModModElements;
 @TherazorhailModModElements.ModElement.Tag
 public class RazorBossEntity extends TherazorhailModModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(1.5f, 4f))
-					.build("razor_boss").setRegistryName("razor_boss");
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
+			.size(1.4f, 0.9f)).build("razor_boss").setRegistryName("razor_boss");
 	public RazorBossEntity(TherazorhailModModElements instance) {
 		super(instance, 12);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new RazorBossRenderer.ModelRegisterHandler());
@@ -73,7 +73,7 @@ public class RazorBossEntity extends TherazorhailModModElements.ModElement {
 
 		public CustomEntity(EntityType<CustomEntity> type, World world) {
 			super(type, world);
-			experienceValue = 0;
+			experienceValue = 30;
 			setNoAI(false);
 			enablePersistence();
 		}

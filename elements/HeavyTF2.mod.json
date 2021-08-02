@@ -121,6 +121,12 @@
     "restrictionBiomes": [
       {
         "value": "badlands"
+      },
+      {
+        "value": "badlands_plateau"
+      },
+      {
+        "value": "wooded_badlands_plateau"
       }
     ],
     "spawnInDungeons": false

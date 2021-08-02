@@ -69,6 +69,10 @@ public class HeavyTF2Entity extends TherazorhailModModElements.ModElement {
 		boolean biomeCriteria = false;
 		if (new ResourceLocation("badlands").equals(event.getName()))
 			biomeCriteria = true;
+		if (new ResourceLocation("badlands_plateau").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("wooded_badlands_plateau").equals(event.getName()))
+			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
 		event.getSpawns().getSpawner(EntityClassification.AMBIENT).add(new MobSpawnInfo.Spawners(entity, 10, 3, 6));
